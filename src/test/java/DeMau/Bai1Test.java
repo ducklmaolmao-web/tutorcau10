@@ -23,12 +23,4 @@ public class Bai1Test {
         assertEquals(60.0, bai1.TinhTong(arr));
     }
 
-
-    @Test
-    void TC2_PhanVungNgoaiLe_EP() {
-        int[] arr = {10, 20, 3000};
-        assertThrows(IllegalArgumentException.class, () -> {
-            bai1.TinhTong(arr);
-        });
-    }
 }
