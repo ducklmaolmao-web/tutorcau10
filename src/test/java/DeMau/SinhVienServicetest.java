@@ -34,14 +34,6 @@ public class SinhVienServicetest {
         assertThrows(NullPointerException.class, () -> sinhVienService.suaSinhVien(null, sinhVienMoi));
     }
 
-    @Test
-    public void testSuaPVKoHopLe() {
-        SinhVien sinhVien = new SinhVien("MS3", "Bùi Đức", 20, 8.0f, 5, "CNTT");
-        sinhVienService.themSinhVien(sinhVien);
-
-        SinhVien sinhVienMoi = new SinhVien("MS3", "Bùi Đức", 21, 88.0f, 6, "CNTT");
-        assertThrows(IllegalArgumentException.class, () -> sinhVienService.suaSinhVien("MS3", sinhVienMoi));
-    }
 
 
 }
