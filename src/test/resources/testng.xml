@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Calculator Suite">
+    <test name="Math Tests">
+        <classes>
+            <class name="vn.fpoly.TutorBuoi1.CalculatorMathTest"/>
+        </classes>
+    </test>
+
+    <test name="Division Test">
+        <classes>
+            <class name="vn.fpoly.TutorBuoi1.CalculatorDivisionTest"/>
+        </classes>
+    </test>
+</suite>
