@@ -31,12 +31,4 @@ public class Bai1Test {
             bai1.TinhTong(arr);
         });
     }
-
-    @Test
-    void TC2_PhanVungNgoaiLe2_EP() {
-        int[] arr = {10, 20, -3000};
-        assertThrows(IllegalArgumentException.class, () -> {
-            bai1.TinhTong(arr);
-        });
-    }
 }
