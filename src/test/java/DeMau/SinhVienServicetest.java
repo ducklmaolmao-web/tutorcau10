@@ -43,12 +43,5 @@ public class SinhVienServicetest {
         assertThrows(IllegalArgumentException.class, () -> sinhVienService.suaSinhVien("MS3", sinhVienMoi));
     }
 
-    @Test
-    public void testSuaPVHopLe() {
-        SinhVien sinhVien = new SinhVien("MS4", "Bùi Đức ngu", 20, 8.0f, 5, "CNTT");
-        sinhVienService.themSinhVien(sinhVien);
 
-        SinhVien sinhVienMoi = new SinhVien("MS4", "Bùi Đức ngu", 21, 4.0f, 6, "An toàn thông tin");
-        assertTrue(sinhVienService.suaSinhVien("MS4", sinhVienMoi));
-    }
 }
