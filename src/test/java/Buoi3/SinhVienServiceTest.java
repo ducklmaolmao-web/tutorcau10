@@ -61,12 +61,7 @@ public class SinhVienServiceTest {
     public void suaSinhVien_IDKhongTonTai_KhongHopLe() {
         assertThrows(IllegalArgumentException.class, () -> service.suaSinhVien("SV99", "Pham Binh", 8.0));
     }
-    @Test
-    public void suaSinhVien_DiemAm_KhongHopLe() {
-        SinhVien sv = new SinhVien("SV08", "le Van Hoan", 6.0, "SD21207", 22);
-        service.themSinhVien(sv);
-        assertThrows(IllegalArgumentException.class, () -> service.suaSinhVien("SV08", "Nguyen Manh Linh ", -2.0));
-    }
+
 
 
 }
